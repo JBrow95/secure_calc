@@ -1,0 +1,33 @@
+<body>
+	
+	<div>
+		<h1>Secure Calc</h1>
+	</div>
+
+	<div>
+		<form method="post" action="calculate">
+			<input type="number" placeholder="Enter Number" name="val1" required>
+			<input type="number" placeholder="Enter Number" name="val2" required><br>
+			<input type="radio" name="operation" value="add">Add<br>
+  			<input type="radio" name="operation" value="subtract">Subtract<br>
+ 			<input type="radio" name="operation" value="multiply">Multiply<br>
+			<input type="radio" name="operation" value="divide">Divide<br>
+
+			<div>
+				<input type="submit" value="Submit">
+			</div>
+
+			<h2>
+				<% unless val1 == ""%>
+				
+				<% if result == false%>
+					cannot divide by zero
+				<% else%>
+					<%= val1%> <%= operation%> <%= val2%> = <%= result%>
+				<% end%>
+				<% end%>
+			</h2>
+		</form>
+	</div>
+
+</body>

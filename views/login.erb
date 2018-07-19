@@ -1,3 +1,23 @@
 <body>
-	<p>hi<p>
+
+	<div class="loginBox">
+		<form method="post" action="log">
+			<div class="header">
+				<h3>Login</h3>
+			</div>
+
+			<div class="error">
+				<p><%= error%></p>
+			</div>
+
+			<div class="inputBox">
+				<input type="text" name="username">
+				<input type="text" name="password">
+			</div>
+
+			<div class="submit">
+				<input type="submit" value="Login" id="hover">
+			</div>
+		</form>
+	</div>
 </body>

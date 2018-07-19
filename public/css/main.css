@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+.loginBox {
+	position: absolute;
+	top: 50%;
+	left: 38%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	padding: 50px;
+	background: rgba(0,0,0,0.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 20px rgba(0,0,0,0.6);
+	border-radius: 15px;
+}
+
+.header h3{
+	font-size: 24px;
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+.inputBox input{
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	padding: 15px 0;
+	margin-bottom: 10px;
+	color: #fff;
+	font-size: 14px;
+}
+
+
+.submit input[type="submit"] {
+	outline: none;
+	border: none;
+	width: 100%;
+	background-color: #1db517;
+	font-size: 20px;
+	margin-top: 15px;
+	padding: 12px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+#hover:hover {
+	background-color: #11990c;
+}
+
+.inputBox input[type="text"] {
+	font-size: 16px;
+	padding-left: 5px;
+}
+
+.error {
+	color: #f72222;
+	text-align: center;
+}

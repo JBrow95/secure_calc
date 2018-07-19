@@ -63,5 +63,9 @@ post '/calculate' do
 		session[:operation] = "/"
 	end
 	session[:result] = resp1(params[:operation],params[:val1],params[:val2])
-	redirect '/'
+	redirect '/calc'
+end
+
+get '/forgot' do
+	erb :forgot
 end

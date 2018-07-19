@@ -38,9 +38,13 @@ body {
 	padding: 15px 0;
 	margin-bottom: 10px;
 	color: #fff;
-	font-size: 14px;
 }
 
+.inputBox input[type="password"] {
+	font-size: 16px;
+	padding-left: 5px;
+}
+	
 
 .submit input[type="submit"] {
 	outline: none;
@@ -67,4 +71,42 @@ body {
 .error {
 	color: #f72222;
 	text-align: center;
+}
+
+.forgot a {
+	margin-top: 20px;
+	float: right;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.forgot a:hover {
+	color: #0e44cc;
+}
+
+
+.left ul li {
+	list-style: none;
+}
+
+ 
+.right ul li {
+	list-style: none;
+}
+
+.right {
+	float: right;
+	margin-right: 800px;
+}
+
+.left {
+	float: left;
+	margin-left: 100px;
+}
+
+.back {
+	position: absolute;
+	top: 30%;
+	left: 20%;
 }

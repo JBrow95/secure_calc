@@ -7,6 +7,8 @@ body {
 	height: 100vh;
 	width: 100vw;
 	font-family: 'Quicksand', sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 
@@ -109,4 +111,58 @@ body {
 	position: absolute;
 	top: 30%;
 	left: 20%;
+}
+
+.calcBox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+}
+
+.nums input[type="number"] {
+	padding-left: 5px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-butto {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.nums input {
+	line-height: 40px;
+}
+
+.in input {
+	margin-left: 80px;
+	float: left;
+}
+
+.in2 input {
+	margin-right: 80px;
+	float: right;
+}
+
+.ops {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.sub {
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.head1 {
+	text-align: center;
+}
+
+.answer {
+	text-align: center;
 }

@@ -67,5 +67,6 @@ post '/calculate' do
 end
 
 get '/forgot' do
+
 	erb :forgot
 end

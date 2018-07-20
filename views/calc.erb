@@ -1,33 +1,48 @@
 <body>
 	
-	<div>
+	<div class="head1">
 		<h1>Secure Calc</h1>
 	</div>
 
-	<div>
+	<div class="calcBox">
 		<form method="post" action="calculate">
-			<input type="number" placeholder="Enter Number" name="val1" required>
-			<input type="number" placeholder="Enter Number" name="val2" required><br>
-			<input type="radio" name="operation" value="add">Add<br>
-  			<input type="radio" name="operation" value="subtract">Subtract<br>
- 			<input type="radio" name="operation" value="multiply">Multiply<br>
-			<input type="radio" name="operation" value="divide">Divide<br>
 
-			<div>
+		<div class="nums">
+			<div class="in">
+			    <input type="number" placeholder="Enter Number" name="val1" required>
+			</div>
+			<div class="in2">
+				<input type="number" placeholder="Enter Number" name="val2" required><br>
+			</div>
+		</div>
+
+		<div class="ops">
+			<input type="radio" name="operation" value="add">Add
+  			<input type="radio" name="operation" value="subtract">Subtract
+ 			<input type="radio" name="operation" value="multiply">Multiply
+			<input type="radio" name="operation" value="divide">Divide
+		</div>
+
+			<div class="sub">
 				<input type="submit" value="Submit">
+				<a href="/calc"><input type="button" value="Refresh"></a>
 			</div>
 
-			<h2>
-				<% unless val1 == ""%>
-				
-				<% if result == false%>
-					cannot divide by zero
-				<% else%>
-					<%= val1%> <%= operation%> <%= val2%> = <%= result%>
-				<% end%>
-				<% end%>
-			</h2>
 		</form>
+
 	</div>
 
+
+	<div class="answer">
+		<h2>
+			<% unless val1 == ""%>
+			
+			<% if result == false%>
+				cannot divide by zero
+			<% else%>
+				<%= val1%> <%= operation%> <%= val2%> = <%= result%>
+			<% end%>
+			<% end%>
+		</h2>
+	</div>
 </body>

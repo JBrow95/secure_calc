@@ -31,6 +31,12 @@ body {
 	letter-spacing: 3px;
 }
 
+.inputBox input::-webkit-input-placeholder {
+	color: #fff;
+	letter-spacing: 4px;
+	filter: opacity(0.2);
+}
+
 .inputBox input{
 	border: none;
 	outline: none;
@@ -52,7 +58,7 @@ body {
 	outline: none;
 	border: none;
 	width: 100%;
-	background-color: #1db517;
+	background-color: #10ce22;
 	font-size: 20px;
 	margin-top: 15px;
 	padding: 12px;
@@ -62,7 +68,7 @@ body {
 }
 
 #hover:hover {
-	background-color: #11990c;
+	background-color: #10e524;
 }
 
 .inputBox input[type="text"] {
@@ -111,6 +117,16 @@ body {
 	position: absolute;
 	top: 30%;
 	left: 20%;
+}
+
+.back input[type="button"] {
+	border: none;
+	outline: none;
+	color: #000;
+	background-color: #11d10a;
+	padding: 10px;
+	width: 150%;
+	cursor: pointer;
 }
 
 .calcBox {

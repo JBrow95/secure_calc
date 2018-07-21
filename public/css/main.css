@@ -55,20 +55,22 @@ body {
 	
 
 .submit input[type="submit"] {
-	outline: none;
-	border: none;
+	border: 1px solid #338033;
 	width: 100%;
-	background-color: #10ce22;
+	background: none;
 	font-size: 20px;
 	margin-top: 15px;
 	padding: 12px;
 	border-radius: 10px;
-	letter-spacing: 1px;
 	color: #fff;
+	transition: .6s;
+	overflow: hidden;
+
 }
 
-#hover:hover {
-	background-color: #10e524;
+.submit input[type="submit"]:hover {
+	transition: .5s;
+	background: #338033;
 }
 
 .inputBox input[type="text"] {

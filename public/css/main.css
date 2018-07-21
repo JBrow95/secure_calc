@@ -70,7 +70,7 @@ body {
 
 .submit input[type="submit"]:hover {
 	transition: .5s;
-	background: #338033;
+	background: #10ce22;
 }
 
 .inputBox input[type="text"] {
